@@ -106,8 +106,8 @@ In the cell below, assign `X` to be the features and `y` to be the target. Remem
 ```python
 # Replace None with appropriate code
 
-X = None
-y = None
+X = df.drop(columns=["SBP"]
+y = df["SBP"]
 
 X
 ```
@@ -136,10 +136,10 @@ Then create variables `X_train`, `X_test`, `y_train`, and `y_test` using `train_
 # Replace None with appropriate code
 
 # Import the relevant function
-None
+from sklearn.model_selection import train_test_split
 
 # Create train and test data using random_state=2021
-None, None, None, None = None
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=2021)
 ```
 
 Make sure that the assert statements pass:
